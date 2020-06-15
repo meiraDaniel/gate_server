@@ -67,7 +67,9 @@ def get_clients():
     response = jsonify({'clients': list_clients})
     return response
 
-
+@app.route('/')
+def index():
+    return "<h1>Welcome to our server !!</h1>"
 
 # tour_1 = Tour(tour_name='Aventure Winter', place='Christchurch, New Zealand', activities='Hiking,Skiing,Snowboarding,Mountains,Climbing,Camping,Food Tasting', price=1280, number_days=6, number_people=1, isSummer=False, sale=True)
 # tour_2 = Tour(tour_name='Wild Winter', place='Queenstown, New Zealand', activities='Rainforests,Hiking,Boat Ride,Glaciers,Skiing', price=789, number_days=4, isSummer=False)
