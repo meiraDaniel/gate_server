@@ -6,6 +6,8 @@ from flaskapi.models import Tour, Client
 methods = ['GET', 'POST']
 
 
+
+
 @app.route('/places', methods=['GET'])
 def get_places():
 
